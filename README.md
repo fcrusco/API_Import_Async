@@ -80,6 +80,17 @@ code .
 
 
 ### 3. Conteúdo
+Caso não tenha, crie a tabela no Oracle
+```
+CREATE TABLE TB_CLIENTE (
+    ID_CLIENTE NUMBER(10,0) DEFAULT "PF2257"."ISEQ$$_4217063".nextval NOT NULL,
+    NOME NVARCHAR2(2000 CHAR),
+    SOBRENOME NVARCHAR2(2000 CHAR),
+    EMAIL NVARCHAR2(2000 CHAR),
+    PRIMARY KEY (ID_CLIENTE)
+);
+```
+
 Data/AppDbContext
 ```
 // Importa o namespace onde a classe Cliente está localizada.

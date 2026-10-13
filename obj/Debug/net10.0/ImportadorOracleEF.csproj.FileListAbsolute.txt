@@ -31,6 +31,7 @@ C:\Dev\ImportadorOracleEF\obj\Debug\net10.0\ImportadorOracleEF.AssemblyInfo.cs
 C:\Dev\ImportadorOracleEF\obj\Debug\net10.0\ImportadorOracleEF.csproj.CoreCompileInputs.cache
 C:\Dev\ImportadorOracleEF\obj\Debug\net10.0\ImportadorOracleEF.MvcApplicationPartsAssemblyInfo.cs
 C:\Dev\ImportadorOracleEF\obj\Debug\net10.0\ImportadorOracleEF.MvcApplicationPartsAssemblyInfo.cache
+C:\Dev\ImportadorOracleEF\obj\Debug\net10.0\ImportadorOracleEF.sourcelink.json
 C:\Dev\ImportadorOracleEF\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Dev\ImportadorOracleEF\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Dev\ImportadorOracleEF\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
@@ -40,6 +41,7 @@ C:\Dev\ImportadorOracleEF\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Dev\ImportadorOracleEF\obj\Debug\net10.0\staticwebassets.development.json
 C:\Dev\ImportadorOracleEF\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Dev\ImportadorOracleEF\obj\Debug\net10.0\swae.build.ex.cache
+C:\Dev\ImportadorOracleEF\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Dev\ImportadorOracleEF\obj\Debug\net10.0\Importad.1051AC6F.Up2Date
 C:\Dev\ImportadorOracleEF\obj\Debug\net10.0\ImportadorOracleEF.dll
 C:\Dev\ImportadorOracleEF\obj\Debug\net10.0\refint\ImportadorOracleEF.dll

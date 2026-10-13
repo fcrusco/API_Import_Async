@@ -104,9 +104,9 @@ Crie um arquivo de texto local (ex: `clientes.txt`). Os dados devem estar separa
 
 **Exemplo de conteúdo do `clientes.txt`:**
 ```text
-Fabio;Crusco da Silva;fabio@email.com
+Fabio;Crusco;fabio@email.com
 Sandra;Paiao;sandra@email.com
-Bruce;Wayne;bruce@wayne.com
+Lucas;Almeida;lucas.almeida@email.com
 ```
 
 

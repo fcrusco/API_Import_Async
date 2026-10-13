@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ImportadorOracleEF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6c59309d89668b91a5f2e1b2440578f2fca9827")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f88daa432243a48b1b9e14f1bda44e4a378f7f1")]
 [assembly: System.Reflection.AssemblyProductAttribute("ImportadorOracleEF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ImportadorOracleEF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

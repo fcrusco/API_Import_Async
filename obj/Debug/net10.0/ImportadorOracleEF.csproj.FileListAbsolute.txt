@@ -48,3 +48,5 @@ C:\Dev\ImportadorOracleEF\obj\Debug\net10.0\refint\ImportadorOracleEF.dll
 C:\Dev\ImportadorOracleEF\obj\Debug\net10.0\ImportadorOracleEF.pdb
 C:\Dev\ImportadorOracleEF\obj\Debug\net10.0\ImportadorOracleEF.genruntimeconfig.cache
 C:\Dev\ImportadorOracleEF\obj\Debug\net10.0\ref\ImportadorOracleEF.dll
+C:\Dev\ImportadorOracleEF\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Dev\ImportadorOracleEF\bin\Debug\net10.0\Scalar.AspNetCore.dll

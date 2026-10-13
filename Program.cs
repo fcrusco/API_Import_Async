@@ -6,6 +6,8 @@ using ImportadorOracleEF.Services;
 using ImportadorOracleEF.Endpoints;
 // Importa o Entity Framework Core para habilitar o método de conexão com o banco (UseOracle).
 using Microsoft.EntityFrameworkCore;
+//Scalar é uma biblioteca que permite gerar documentação OpenAPI nativa para APIs .NET
+using Scalar.AspNetCore;
 
 // Inicializa o construtor da aplicação web, preparando o terreno para adicionarmos configurações e serviços.
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +17,9 @@ builder.Services.AddEndpointsApiExplorer();
 
 // Adiciona o serviço gerador do Swagger, que criará a documentação automática da nossa API.
 builder.Services.AddSwaggerGen();
+
+// Configuração para o Scalar (OpenAPI nativo do .NET)
+builder.Services.AddOpenApi();
 
 // Acessa o arquivo appsettings.json de forma segura e captura a string de conexão armazenada na chave "OracleDb".
 var connectionString = builder.Configuration.GetConnectionString("OracleDb");
@@ -36,6 +41,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     // Habilita a interface visual e interativa do Swagger para que possamos testar pelo navegador.
     app.UseSwaggerUI();
+
+    // Ativa o endpoint JSON e a interface visual do Scalar
+    app.MapOpenApi();
+    app.MapScalarApiReference();
 }
 
 // Chama o método de extensão que criamos na pasta Endpoints para "pendurar" as rotas /api/clientes na aplicação.

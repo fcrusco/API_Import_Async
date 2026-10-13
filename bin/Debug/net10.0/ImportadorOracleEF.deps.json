@@ -8,11 +8,24 @@
     ".NETCoreApp,Version=v10.0": {
       "ImportadorOracleEF/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": "10.0.12",
           "Oracle.EntityFrameworkCore": "10.23.26301",
+          "Scalar.AspNetCore": "2.18.0",
           "Swashbuckle.AspNetCore": "10.3.0"
         },
         "runtime": {
           "ImportadorOracleEF.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.OpenApi/10.0.12": {
+        "dependencies": {
+          "Microsoft.OpenApi": "2.12.0"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "assemblyVersion": "10.0.12.0",
+            "fileVersion": "10.0.1226.42308"
+          }
         }
       },
       "Microsoft.EntityFrameworkCore/10.0.0": {
@@ -45,11 +58,11 @@
           }
         }
       },
-      "Microsoft.OpenApi/2.7.5": {
+      "Microsoft.OpenApi/2.12.0": {
         "runtime": {
           "lib/net8.0/Microsoft.OpenApi.dll": {
-            "assemblyVersion": "2.7.5.0",
-            "fileVersion": "2.7.5.0"
+            "assemblyVersion": "2.12.0.0",
+            "fileVersion": "2.12.0.0"
           }
         }
       },
@@ -77,6 +90,14 @@
           }
         }
       },
+      "Scalar.AspNetCore/2.18.0": {
+        "runtime": {
+          "lib/net10.0/Scalar.AspNetCore.dll": {
+            "assemblyVersion": "2.18.0.0",
+            "fileVersion": "2.18.0.0"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/10.3.0": {
         "dependencies": {
           "Swashbuckle.AspNetCore.Swagger": "10.3.0",
@@ -86,7 +107,7 @@
       },
       "Swashbuckle.AspNetCore.Swagger/10.3.0": {
         "dependencies": {
-          "Microsoft.OpenApi": "2.7.5"
+          "Microsoft.OpenApi": "2.12.0"
         },
         "runtime": {
           "lib/net10.0/Swashbuckle.AspNetCore.Swagger.dll": {
@@ -188,6 +209,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Microsoft.AspNetCore.OpenApi/10.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7RnQ/UKn+kK3JDLmTpW+vVqNErWthGPAVAy1aIiBzv4ucQ6g9NFvOJUuT0PHcpvcJxGVxctMxj6t+NESWMrgHQ==",
+      "path": "microsoft.aspnetcore.openapi/10.0.12",
+      "hashPath": "microsoft.aspnetcore.openapi.10.0.12.nupkg.sha512"
+    },
     "Microsoft.EntityFrameworkCore/10.0.0": {
       "type": "package",
       "serviceable": true,
@@ -209,12 +237,12 @@
       "path": "microsoft.entityframeworkcore.relational/10.0.0",
       "hashPath": "microsoft.entityframeworkcore.relational.10.0.0.nupkg.sha512"
     },
-    "Microsoft.OpenApi/2.7.5": {
+    "Microsoft.OpenApi/2.12.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-0FA67RSnRM4tcBKqiqVu/HPdZ9+QOKbmeRjxRUGTCjPU4C0bmUhd97Dso7Yild5P7nOV6GxJ2xrK0Kv/O9xp0w==",
-      "path": "microsoft.openapi/2.7.5",
-      "hashPath": "microsoft.openapi.2.7.5.nupkg.sha512"
+      "sha512": "sha512-0xB/be+f6qYOhvQPUrVsLrau+fkowYv6gt9RIkajMhwT7sZnqtcA797yW3bS5kgSje+AQW4xZgyLnW641YFioQ==",
+      "path": "microsoft.openapi/2.12.0",
+      "hashPath": "microsoft.openapi.2.12.0.nupkg.sha512"
     },
     "Oracle.EntityFrameworkCore/10.23.26301": {
       "type": "package",
@@ -229,6 +257,13 @@
       "sha512": "sha512-hhl6m5sam9vWNXt4Xad+bAcB+VBMBxya16/P+R3xRMKzNVl/6ssF6HuNZNeofD+5qDaTRqhWbKjdFn65rD5KYw==",
       "path": "oracle.manageddataaccess.core/23.26.301",
       "hashPath": "oracle.manageddataaccess.core.23.26.301.nupkg.sha512"
+    },
+    "Scalar.AspNetCore/2.18.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wwI3khcYNM7oL6axr4a41G29fJYOS3ckusgYZ4NiIccL8Amh2LOeu4HSK1SrQWiMJNrgoFqyWfDkOkunQCiRDw==",
+      "path": "scalar.aspnetcore/2.18.0",
+      "hashPath": "scalar.aspnetcore.2.18.0.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/10.3.0": {
       "type": "package",

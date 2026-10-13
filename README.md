@@ -1,4 +1,4 @@
-# 🚀 API de Importação de Arquivos TXT para Oracle Cloud (.NET 10)
+# 🚀 API de Importação de Arquivos TXT para Oracle (.NET 10)
 
 Esta API foi desenvolvida em **C# .NET 10** utilizando **Minimal APIs** e **Entity Framework Core**. O projeto conecta-se a uma instância do **Oracle Cloud** para mapear a tabela existente `TB_CLIENTE` e processa a importação de um arquivo `.txt` delimitado por ponto e vírgula (`;`), salvando os dados de forma assíncrona.
 

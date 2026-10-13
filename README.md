@@ -71,6 +71,9 @@ dotnet add package Oracle.EntityFrameworkCore
 # Ferramenta para gerar a interface de documentação da API
 dotnet add package Swashbuckle.AspNetCore
 
+# Scalar
+dotnet add package Microsoft.AspNetCore.OpenApi
+
 # Pastas
 mkdir Models Data Services Endpoints
 

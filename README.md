@@ -283,8 +283,8 @@ public static class ClienteEndpoints
 ```
 
 
-Crie ou edite o arquivo `appsettings.json` na raiz do projeto e adicione a sua string de conexão:
-```json - appsettings.json
+Crie ou edite o arquivo `appsettings.Development.json` na raiz do projeto e adicione a sua string de conexão:
+```json - appsettings.Development.json
 {
   "Logging": {
     "LogLevel": {
@@ -308,6 +308,9 @@ dotnet run
 ```
 No terminal, será exibida a URL de escuta (exemplo: `http://localhost:5000`). Acesse a interface interativa adicionando `/swagger` ao final da URL (ex: `http://localhost:5000/swagger`).
 
+ou
+
+No terminal, será exibida a URL de escuta (exemplo: http://localhost:5000). Acesse a nova interface interativa do Scalar adicionando /scalar/v1 ao final da URL (ex: http://localhost:5000/scalar/v1).
 
 ## 🧪 Como Testar via Swagger
 
@@ -335,3 +338,29 @@ Lucas;Almeida;lucas.almeida@email.com
 1. Expanda a rota **`GET /api/clientes`** no Swagger.
 2. Clique em **"Try it out"** e depois em **"Execute"**.
 3. O Swagger retornará um JSON contendo todos os clientes registados na tabela `TB_CLIENTE` do Oracle Cloud, incluindo os IDs gerados pelas Sequences.
+
+
+## 🧪 Como Testar via Scalar
+
+### 1. Formato do Arquivo de Teste
+Crie um arquivo de texto local (ex: `clientes.txt`). Os dados devem estar separados por ponto e vírgula na ordem: `Nome;Sobrenome;Email`. Não envie o ID, pois ele é gerado automaticamente pelo Oracle.
+
+**Exemplo de conteúdo do `clientes.txt`:**
+```text
+Fabio;Crusco;fabio@email.com
+Sandra;Paiao;sandra@email.com
+Lucas;Almeida;lucas.almeida@email.com
+```
+
+### 2. Importando os Dados (Endpoint POST)
+1. Abra a interface do Scalar no navegador (acessando `/scalar/v1`).
+2. No menu de navegação, localize e clique na rota **`POST /api/clientes/importar`**.
+3. No painel interativo (à direita ou abaixo), clique no botão **"Test Request"**.
+4. Na aba **Body** (que deve estar como `multipart/form-data`), localize o campo referente ao `arquivo`, clique para anexar e selecione o seu `clientes.txt`.
+5. Clique no botão azul **"Send"**.
+6. O retorno (HTTP 200 OK) aparecerá no painel de resposta, informando a quantidade de registros importados com sucesso.
+
+### 3. Consultando os Dados (Endpoint GET)
+1. Retorne ao menu de navegação e clique na rota **`GET /api/clientes`**.
+2. Clique em **"Test Request"** e, em seguida, no botão **"Send"**.
+3. O Scalar retornará um JSON contendo todos os clientes registrados na tabela `TB_CLIENTE` do Oracle Cloud, incluindo os IDs gerados pelas Sequences.

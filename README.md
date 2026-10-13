@@ -11,14 +11,37 @@ A aplicação adota uma arquitetura em camadas (Models, Data, Services e Endpoin
 - [Visual Studio Code (VS Code)](https://code.visualstudio.com/) ou IDE da sua preferência.
 - Instância de banco de dados **Oracle Cloud** contendo a tabela `TB_CLIENTE` com as colunas: `ID_CLIENTE` (gerada por Sequence/nextval), `NOME`, `SOBRENOME` e `EMAIL`.
 
+## Minimal APIs
+Abordagem simplificada e leve para construir APIs HTTP em ASP.NET Core, permitindo a criação de rotas com poucas linhas de código. Elas eliminam a necessidade de código estrutural, dispensando a criação de pastas específicas, classes base herdadas ou atributos de roteamento. A configuração e as rotas são definidas diretamente no arquivo Program.cs por meio de expressões lambda e métodos de extensão (como app.MapGet e app.MapPost).
+
+Foram introduzidas oficialmente no .NET 6, lançado em novembro de 2021.
+
+O ecossistema .NET era frequentemente criticado por ser muito verboso, exigindo muita configuração inicial apenas para colocar um endpoint simples no ar. Enquanto isso, frameworks em outras linguagens atraíam desenvolvedores pela agilidade e simplicidade. A Microsoft lançou as Minimal APIs para tornar o C# competitivo no desenvolvimento ágil de microsserviços, diminuindo a barreira de entrada para iniciantes e oferecendo uma arquitetura com altíssima performance e menor consumo de recursos, já que não carrega toda a pipeline pesada do padrão MVC.
+
+São utilizadas para o desenvolvimento de microsserviços, aplicações nativas em nuvem (cloud-native), funções serverless (como Azure Functions), protótipos ágeis e APIs de propósito único (como um importador de arquivos ou um serviço de envio de e-mails). Elas atendem perfeitamente cenários onde o foco é a velocidade de execução e o baixo uso de memória.
+
+Quando usar Minimal APIs
+Microsserviços rápidos e focados: Ideal para serviços independentes que fazem apenas uma coisa específica (como o nosso importador de arquivos TXT). Sem a necessidade de criar várias pastas e arquivos base, você consegue ver o fluxo inteiro do serviço em um único arquivo, o que é perfeito para publicar em contêineres ou funções em nuvem (Serverless).
+
+APIs simples e operações CRUD básicas: Se o seu objetivo é apenas conectar ao banco de dados para criar, ler, atualizar e apagar registros sem lógicas complexas, usar controladores tradicionais gera um excesso de código desnecessário (over-engineering). Com as Minimal APIs, você liga a URL da requisição direto na ação do banco de dados em poucas linhas.
+
+Alta performance e economia financeira em nuvem: Como essa abordagem pula toda a "esteira" pesada do MVC tradicional (ignorando motores de roteamento antigos e formatadores complexos), a API gasta muito menos memória RAM, usa menos CPU. Na nuvem, onde você paga por consumo, isso significa economia direta.
+
+Prototipagem ágil com segurança: Você ganha velocidade de programação, mas sem abrir mão da segurança do C#. O compilador continua avisando sobre erros antes do código rodar, permitindo testar e validar ideias rapidamente sem o estresse de bugs de tipagem.
+
+Quando usar API Controllers (Abordagem Tradicional, desde 2009 - .NET Framework 3.5)
+Sistemas grandes e monolíticos: Quando uma API cresce e passa a ter dezenas ou centenas de endpoints, registrar tudo solto no Program.cs se torna um caos insustentável. Os controladores forçam uma organização visual e arquitetural clara: você cria uma classe ClientesController para agrupar tudo de clientes e um PedidosController para pedidos, facilitando a vida de uma equipe com muitos programadores.
+
+Aplicação de regras em lote (Atributos e Filtros): Se você precisa que 20 rotas diferentes exijam que o usuário seja um "Administrador", nos controladores basta colocar uma única etiqueta [Authorize(Roles="Admin")] no topo da classe, e todas as rotas herdam a regra automaticamente. Nas Minimal APIs, você teria que repetir essa exigência rota por rota.
+
+Injeção de dependência inteligente: Em um controlador, você solicita o acesso ao banco de dados ou a um serviço de e-mail apenas uma vez, no topo do arquivo. A partir daí, todos os métodos daquele controlador podem usar o serviço. Nas Minimal APIs, você precisa injetar esses serviços nos parâmetros de cada uma das rotas repetidamente.
+
+Versionamento avançado de API: Se você está criando uma API pública que outras empresas vão consumir e precisa manter versões simultâneas rodando (exemplo: a rota /v1/clientes funciona de um jeito e a /v2/clientes de outro), o ecossistema de controladores possui bibliotecas muito mais maduras e fáceis de configurar para lidar com esse roteamento complexo.
 
 ## 🧠 Minimal APIs vs API Controllers
 
 Este projeto utiliza **Minimal APIs**, uma abordagem introduzida em versões recentes do .NET para simplificar o desenvolvimento. Abaixo encontram-se as principais diferenças didáticas entre esta abordagem e os tradicionais **API Controllers**:
 
-enriqueça ainda mais este comparativo
-
-adicione as versoes do .net em que cada tipo de api nasceu
 
 | Característica | Minimal APIs (Utilizado neste projeto) | API Controllers (Abordagem Tradicional) |
 | :--- | :--- | :--- |

@@ -73,6 +73,7 @@ dotnet add package Swashbuckle.AspNetCore
 
 # Scalar
 dotnet add package Microsoft.AspNetCore.OpenApi
+dotnet add package Scalar.AspNetCore
 
 # Pastas
 mkdir Models Data Services Endpoints

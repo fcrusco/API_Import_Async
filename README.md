@@ -67,6 +67,12 @@ dotnet add package Oracle.EntityFrameworkCore
 
 # Ferramenta para gerar a interface de documentação da API
 dotnet add package Swashbuckle.AspNetCore
+
+# Pastas
+mkdir Models Data Services Endpoints
+
+# Abrir no VSCode
+code .
 ```
 
 

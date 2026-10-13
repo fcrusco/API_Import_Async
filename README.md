@@ -366,6 +366,7 @@ Lucas;Almeida;lucas.almeida@email.com
 3. O Scalar retornará um JSON contendo todos os clientes registrados na tabela `TB_CLIENTE` do Oracle Cloud, incluindo os IDs gerados pelas Sequences.
 
 
+### Comparativo
 | Característica | C# .NET (Minimal APIs) | Python (FastAPI / Flask) | Go (Gin / net/http) | Java (Spring Boot / Javalin) |
 | :--- | :--- | :--- | :--- | :--- |
 | **Foco e Filosofia** | Alta performance com baixo *boilerplate*. Traz o poder do ecossistema corporativo do .NET para uma sintaxe funcional e direta. | Simplicidade extrema e desenvolvimento rápido. FastAPI brilha ao integrar documentação automática e tipagem via *Type Hints*. | Simplicidade procedural e concorrência nativa (Goroutines). Foco em consumo mínimo de recursos e deploy em binário único. | Estrutura robusta e opinativa (Spring). Javalin tenta trazer a leveza funcional, mas o ecossistema ainda é amplamente orientado a anotações e classes. |

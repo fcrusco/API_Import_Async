@@ -127,7 +127,20 @@ public class AppDbContext : DbContext
 }
 ```
 
-Crie ou edite o arquivo `appsettings.json` na raiz do projeto e adicione a sua string de conexão no formato EZConnect:
+Models/Cliente.cs
+```
+namespace ImportadorOracleEF.Models;
+
+public class Cliente
+{
+    public int IdCliente { get; set; }
+    public string? Nome { get; set; }
+    public string? Sobrenome { get; set; }
+    public string? Email { get; set; }
+}
+```
+
+Crie ou edite o arquivo `appsettings.json` na raiz do projeto e adicione a sua string de conexão:
 ```json - appsettings.json
 {
   "Logging": {

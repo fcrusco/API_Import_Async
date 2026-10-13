@@ -16,6 +16,10 @@ A aplicação adota uma arquitetura em camadas (Models, Data, Services e Endpoin
 
 Este projeto utiliza **Minimal APIs**, uma abordagem introduzida em versões recentes do .NET para simplificar o desenvolvimento. Abaixo encontram-se as principais diferenças didáticas entre esta abordagem e os tradicionais **API Controllers**:
 
+enriqueça ainda mais este comparativo
+
+adicione as versoes do .net em que cada tipo de api nasceu
+
 | Característica | Minimal APIs (Utilizado neste projeto) | API Controllers (Abordagem Tradicional) |
 | :--- | :--- | :--- |
 | **Paradigma** | Funcional (baseado em expressões Lambda e métodos de extensão). | Orientado a Objetos (baseado em Classes e Herança). |

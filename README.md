@@ -26,7 +26,6 @@ Este projeto utiliza **Minimal APIs**, uma abordagem introduzida em versões rec
 
 **Referências Oficiais da Microsoft:**
 * [Visão Geral de Minimal APIs](https://learn.microsoft.com/pt-br/aspnet/core/fundamentals/minimal-apis/overview)
-* [Comparação detalhada: APIs Mínimas vs Controladores](https://learn.microsoft.com/pt-br/aspnet/core/fundamentals/apis)
 
 
 ## 🏗️ Estrutura do Projeto

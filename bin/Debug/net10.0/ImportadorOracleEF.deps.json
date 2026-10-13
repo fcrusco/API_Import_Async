@@ -1,0 +1,290 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "ImportadorOracleEF/1.0.0": {
+        "dependencies": {
+          "Oracle.EntityFrameworkCore": "10.23.26301",
+          "Swashbuckle.AspNetCore": "10.3.0"
+        },
+        "runtime": {
+          "ImportadorOracleEF.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore/10.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": "10.0.0"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.EntityFrameworkCore.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.52411"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Abstractions/10.0.0": {
+        "runtime": {
+          "lib/net10.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.52411"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Relational/10.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "10.0.0"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.EntityFrameworkCore.Relational.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.52411"
+          }
+        }
+      },
+      "Microsoft.OpenApi/2.7.5": {
+        "runtime": {
+          "lib/net8.0/Microsoft.OpenApi.dll": {
+            "assemblyVersion": "2.7.5.0",
+            "fileVersion": "2.7.5.0"
+          }
+        }
+      },
+      "Oracle.EntityFrameworkCore/10.23.26301": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "10.0.0",
+          "Oracle.ManagedDataAccess.Core": "23.26.301"
+        },
+        "runtime": {
+          "lib/net10.0/Oracle.EntityFrameworkCore.dll": {
+            "assemblyVersion": "10.0.23.1",
+            "fileVersion": "10.0.23.1"
+          }
+        }
+      },
+      "Oracle.ManagedDataAccess.Core/23.26.301": {
+        "dependencies": {
+          "System.Diagnostics.PerformanceCounter": "8.0.0",
+          "System.DirectoryServices.Protocols": "8.0.2"
+        },
+        "runtime": {
+          "lib/net8.0/Oracle.ManagedDataAccess.dll": {
+            "assemblyVersion": "23.1.0.0",
+            "fileVersion": "23.1.0.0"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore/10.3.0": {
+        "dependencies": {
+          "Swashbuckle.AspNetCore.Swagger": "10.3.0",
+          "Swashbuckle.AspNetCore.SwaggerGen": "10.3.0",
+          "Swashbuckle.AspNetCore.SwaggerUI": "10.3.0"
+        }
+      },
+      "Swashbuckle.AspNetCore.Swagger/10.3.0": {
+        "dependencies": {
+          "Microsoft.OpenApi": "2.7.5"
+        },
+        "runtime": {
+          "lib/net10.0/Swashbuckle.AspNetCore.Swagger.dll": {
+            "assemblyVersion": "10.3.0.0",
+            "fileVersion": "10.3.0.3126"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerGen/10.3.0": {
+        "dependencies": {
+          "Swashbuckle.AspNetCore.Swagger": "10.3.0"
+        },
+        "runtime": {
+          "lib/net10.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+            "assemblyVersion": "10.3.0.0",
+            "fileVersion": "10.3.0.3126"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerUI/10.3.0": {
+        "runtime": {
+          "lib/net10.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+            "assemblyVersion": "10.3.0.0",
+            "fileVersion": "10.3.0.3126"
+          }
+        }
+      },
+      "System.Configuration.ConfigurationManager/8.0.0": {
+        "dependencies": {
+          "System.Security.Cryptography.ProtectedData": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/System.Configuration.ConfigurationManager.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "System.Diagnostics.PerformanceCounter/8.0.0": {
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/System.Diagnostics.PerformanceCounter.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Diagnostics.PerformanceCounter.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "System.DirectoryServices.Protocols/8.0.2": {
+        "runtime": {
+          "lib/net8.0/System.DirectoryServices.Protocols.dll": {
+            "assemblyVersion": "8.0.0.2",
+            "fileVersion": "8.0.1725.26602"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux/lib/net8.0/System.DirectoryServices.Protocols.dll": {
+            "rid": "linux",
+            "assetType": "runtime",
+            "assemblyVersion": "8.0.0.2",
+            "fileVersion": "8.0.1725.26602"
+          },
+          "runtimes/osx/lib/net8.0/System.DirectoryServices.Protocols.dll": {
+            "rid": "osx",
+            "assetType": "runtime",
+            "assemblyVersion": "8.0.0.2",
+            "fileVersion": "8.0.1725.26602"
+          },
+          "runtimes/win/lib/net8.0/System.DirectoryServices.Protocols.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "8.0.0.2",
+            "fileVersion": "8.0.1725.26602"
+          }
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/8.0.0": {
+        "runtime": {
+          "lib/net8.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ImportadorOracleEF/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.EntityFrameworkCore/10.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hHa2amRjMyBLUH/KTML6FgIAhZ0VFYkhCKwWEax0rO6iNeM1P5MflyeQLE5dniSIOZHc3Oqyv5UIyTFO4e1Auw==",
+      "path": "microsoft.entityframeworkcore/10.0.0",
+      "hashPath": "microsoft.entityframeworkcore.10.0.0.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Abstractions/10.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-C+TT9k7f1GQ8agOfV512K9iwrzi76RXVSDiLx+iWC9pz3QhEpSF1Dyk+FpVvd8ULQ+rqymfM8KQ7g48ttQVyMg==",
+      "path": "microsoft.entityframeworkcore.abstractions/10.0.0",
+      "hashPath": "microsoft.entityframeworkcore.abstractions.10.0.0.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Relational/10.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A3MX1ee7RDxWCUdx/KqP+74fbksz0UIhkVZh56YHvbPkEKsffCXgHU3LGkRDwqR/MrBNWLCWC/IVX79tzM30ZA==",
+      "path": "microsoft.entityframeworkcore.relational/10.0.0",
+      "hashPath": "microsoft.entityframeworkcore.relational.10.0.0.nupkg.sha512"
+    },
+    "Microsoft.OpenApi/2.7.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0FA67RSnRM4tcBKqiqVu/HPdZ9+QOKbmeRjxRUGTCjPU4C0bmUhd97Dso7Yild5P7nOV6GxJ2xrK0Kv/O9xp0w==",
+      "path": "microsoft.openapi/2.7.5",
+      "hashPath": "microsoft.openapi.2.7.5.nupkg.sha512"
+    },
+    "Oracle.EntityFrameworkCore/10.23.26301": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aX2QPJmfnb2m4gIpJuKuGwXwUhi1xg1F+iU/O7LSbmT5Kk2ICjKVNISDx7pFv0ohfGJz79DwfLswg1Q4aRjZHw==",
+      "path": "oracle.entityframeworkcore/10.23.26301",
+      "hashPath": "oracle.entityframeworkcore.10.23.26301.nupkg.sha512"
+    },
+    "Oracle.ManagedDataAccess.Core/23.26.301": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hhl6m5sam9vWNXt4Xad+bAcB+VBMBxya16/P+R3xRMKzNVl/6ssF6HuNZNeofD+5qDaTRqhWbKjdFn65rD5KYw==",
+      "path": "oracle.manageddataaccess.core/23.26.301",
+      "hashPath": "oracle.manageddataaccess.core.23.26.301.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore/10.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-y76EI71vcrsXfjw+HrUJaf9lRYulqb+0vzRFkKDgCyzK8GY6O0F0mTDWUEK2tUYbpkifHTaQTpT4tkh7f/q1kA==",
+      "path": "swashbuckle.aspnetcore/10.3.0",
+      "hashPath": "swashbuckle.aspnetcore.10.3.0.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.Swagger/10.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/W3Vdf8TeHAk6Pw6H/rduW6LQbzxKhUVnqtUFNHj/qUrLjlEZeVN8Q5WWgyGc3DLHRKlXm82kKCYfWRvx3/WCg==",
+      "path": "swashbuckle.aspnetcore.swagger/10.3.0",
+      "hashPath": "swashbuckle.aspnetcore.swagger.10.3.0.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.SwaggerGen/10.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-X0tSFT1OrlkhVQNqk1DNL+dQZmfvmXF2/syJ8whjORhVkPdZoyWC4445OG0VwnYoH9Q+oZaIblMBHX+Geb30Hw==",
+      "path": "swashbuckle.aspnetcore.swaggergen/10.3.0",
+      "hashPath": "swashbuckle.aspnetcore.swaggergen.10.3.0.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.SwaggerUI/10.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3qcin6S55lsFTsWf0vQO3P0bFc0tvk2EOkH+6wgJF9UQUk1WqsDUPEkexQE9Ievc+3zTPoYds9BTlvPMRbmkcQ==",
+      "path": "swashbuckle.aspnetcore.swaggerui/10.3.0",
+      "hashPath": "swashbuckle.aspnetcore.swaggerui.10.3.0.nupkg.sha512"
+    },
+    "System.Configuration.ConfigurationManager/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JlYi9XVvIREURRUlGMr1F6vOFLk7YSY4p1vHo4kX3tQ0AGrjqlRWHDi66ImHhy6qwXBG3BJ6Y1QlYQ+Qz6Xgww==",
+      "path": "system.configuration.configurationmanager/8.0.0",
+      "hashPath": "system.configuration.configurationmanager.8.0.0.nupkg.sha512"
+    },
+    "System.Diagnostics.PerformanceCounter/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lX6DXxtJqVGWw7N/QmVoiCyVQ+Q/Xp+jVXPr3gLK1jJExSn1qmAjJQeb8gnOYeeBTG3E3PmG1nu92eYj/TEjpg==",
+      "path": "system.diagnostics.performancecounter/8.0.0",
+      "hashPath": "system.diagnostics.performancecounter.8.0.0.nupkg.sha512"
+    },
+    "System.DirectoryServices.Protocols/8.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7pSU+qkmdkwbikAvn4kpvClfyffaR7dYJw7ucBtO5d6m/7wgKZIULOZAGFLMIMOFFmg7xC67TYKptHxcbqQm+Q==",
+      "path": "system.directoryservices.protocols/8.0.2",
+      "hashPath": "system.directoryservices.protocols.8.0.2.nupkg.sha512"
+    },
+    "System.Security.Cryptography.ProtectedData/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+TUFINV2q2ifyXauQXRwy4CiBhqvDEDZeVJU7qfxya4aRYOKzVBpN+4acx25VcPB9ywUN6C0n8drWl110PhZEg==",
+      "path": "system.security.cryptography.protecteddata/8.0.0",
+      "hashPath": "system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
+    }
+  }
+}

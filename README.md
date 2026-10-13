@@ -85,6 +85,25 @@ dotnet new web -n ImportadorOracleEF
 cd ImportadorOracleEF
 ```
 
+### Diferença entre templates: web  e  webapi
+A principal diferença entre os dois está na quantidade de configurações, pacotes e códigos pré-prontos que o template da Microsoft insere no momento da criação do projeto.
+
+dotnet new web (Template "Empty Web App")
+Objetivo: É uma tela em branco. Cria um projeto ASP.NET Core o mais vazio e minimalista possível.
+O que ele gera: Apenas o arquivo Program.cs com a infraestrutura básica do servidor e um único endpoint de teste que retorna "Hello World!".
+O que ele omite: Não inclui documentação OpenAPI/Swagger, pacotes de terceiros, configurações de HTTPS avançadas ou arquivos de exemplo.
+Uso ideal: Quando você quer controle absoluto sobre o que entra na sua aplicação, construindo uma Minimal API do zero e instalando pacote por pacote.
+
+dotnet new webapi (Template "Web API")
+Objetivo: Cria um projeto com a "fundação padrão" recomendada para uma API REST completa, pronto para rodar.
+O que ele gera: Inclui a configuração pré-pronta para documentação (dependendo da versão do .NET), arquivos .http para testes locais, redirecionamento HTTPS seguro, e um código de exemplo funcional (o clássico exemplo de previsão do tempo).
+
+Minimal APIs vs Controllers: Historicamente, esse comando gerava uma pasta Controllers cheia de arquivos estruturados. Nas versões modernas, o webapi passou a gerar Minimal APIs por padrão. Se um desenvolvedor quiser a arquitetura clássica usando este comando, ele precisa forçar a criação com uma flag adicional: dotnet new webapi --use-controllers.
+
+Por que usamos o web no nosso projeto (dotnet new web -n ImportadorOracleEF) ?
+Como o objetivo é uma API de propósito único focada na importação de um TXT para o Oracle, o template web evita o trabalho de limpar o projeto, apagando os exemplos de previsão do tempo e configurações desnecessárias que o webapi traria.
+
+
 
 ### 2. Instalar os Pacotes Necessários
 ```bash
